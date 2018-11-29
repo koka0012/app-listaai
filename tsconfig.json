@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "moduleResolution": "node",
+    "jsx": "react-native",
+    "noEmit": false,
+    "outDir": "outputs",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "preserveConstEnums": true,
+    "allowJs": false,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "traceResolution": false,
+    "module": "esnext",
+    "lib": ["es6", "dom", "es5"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "rootDir": "src",
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noImplicitThis": false,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "baseUrl": ".",
+    "checkJs": false,
+    "typeRoots": ["./node_modules/@types", "./src/@types"]
+  },
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "node_modules",
+    "**/node_modules/*",
+    "android",
+    "ios",
+    "build"
+  ]
+}
