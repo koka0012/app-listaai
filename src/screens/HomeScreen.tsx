@@ -1,10 +1,14 @@
 import React from 'react'
-import { SafeAreaView, Text, View } from 'react-native'
+import { SafeAreaView, Text, View, Image } from 'react-native'
 import { NavigationStackScreenOptions } from 'react-navigation'
+
+import Search from '../containers/Search'
+import HeaderLogo from '../components/HeaderLogo'
 
 export default class HomeScreen extends React.Component {
   public static navigationOptions: NavigationStackScreenOptions = {
     title: 'Bem vindo!',
+    headerTitle: <HeaderLogo />,
   }
 
   public render() {
@@ -12,12 +16,10 @@ export default class HomeScreen extends React.Component {
       <SafeAreaView style={{ flexGrow: 1 }}>
         <View
           style={{
-            flexGrow: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
+            padding: 8,
           }}
         >
-          <Text>Testa</Text>
+          <Search />
         </View>
       </SafeAreaView>
     )
