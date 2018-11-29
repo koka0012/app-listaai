@@ -60,3 +60,6 @@ buck-out/
 
 #podfile
 */Pods
+
+#VSCode React Native
+/vscode/.react/
