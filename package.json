@@ -8,17 +8,24 @@
     "lint": "tslint 'src/**/*.{ts,tsx}'"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "faker": "^4.1.0",
     "react": "16.6.1",
+    "react-currency-format": "^1.0.0",
     "react-native": "0.57.7",
+    "react-native-fast-image": "^5.1.1",
     "react-native-gesture-handler": "^1.0.10",
+    "react-native-intl": "^1.0.0",
     "react-native-maps": "^0.22.1",
-    "react-native-paper": "^2.2.8",
+    "react-native-paper": "https://github.com/koka0012/react-native-paper.git#2.3.4",
     "react-native-vector-icons": "^6.1.0",
     "react-navigation": "^3.0.2",
     "react-navigation-material-bottom-tabs": "^1.0.0",
     "ts-jest": "^23.10.5"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/faker": "^4.1.4",
     "@types/react": "^16.7.7",
     "@types/react-native": "^0.57.14",
     "@types/react-native-vector-icons": "^4.6.4",
@@ -30,6 +37,7 @@
     "metro-react-native-babel-preset": "0.49.2",
     "prettier": "^1.15.2",
     "react-native-typescript-transformer": "^1.2.10",
+    "react-navigation-collapsible": "^2.0.0",
     "react-test-renderer": "16.6.1",
     "tslint": "^4.5.1",
     "tslint-config-prettier": "^1.17.0",

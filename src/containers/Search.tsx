@@ -45,6 +45,9 @@ export default class SeachContainer extends React.Component<{}, IState> {
         onChangeText={this._onChangeText}
         value={this.state.text}
         onSubmitEditing={this._searchPressed}
+        style={{
+          margin: 8,
+        }}
       />
     )
   }
