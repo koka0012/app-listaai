@@ -1,4 +1,4 @@
-package com.listaai;
+package br.br.com.listaai;
 
 import android.app.Application;
 

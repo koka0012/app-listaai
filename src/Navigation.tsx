@@ -19,13 +19,14 @@ const HomeNavigator = createStackNavigator(
       screen: ProdutoScreen,
     },
     Pesquisa: {
-      screen: PesquisaScreen
-    }
+      screen: PesquisaScreen,
+    },
   },
   {
     defaultNavigationOptions: {
       headerBackTitle: 'Voltar',
       headerStyle: {
+        flex: 1,
         backgroundColor: '#1c9dc1',
       },
       headerBackTitleStyle: {
