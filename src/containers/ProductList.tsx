@@ -4,6 +4,7 @@ import { ListRenderItemInfo, View } from 'react-native'
 
 import SearchBar from './Search'
 import ProductItem from '../components/ProductItem'
+import EmptyList from '../components/EmptyList'
 
 export default class ProductList extends React.Component<any, any> {
   constructor(props: {}) {
@@ -23,11 +24,13 @@ export default class ProductList extends React.Component<any, any> {
   public render() {
     return (
       <FlatList
-        ListHeaderComponent={<SearchBar />}
+        style={{ flexGrow: 1 }}
+        ListHeaderComponent={this.props.header}
         data={this.props.data || []}
         keyExtractor={this._keyExtrator}
         renderItem={this._renderItem}
         removeClippedSubviews
+        ListEmptyComponent={<EmptyList />}
       />
     )
   }

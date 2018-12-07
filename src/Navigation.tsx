@@ -7,17 +7,32 @@ import {
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs'
 import HomeScreen from './screens/HomeScreen'
 import tabBarIcon from './components/tabBarIcon'
-import AppBar from './components/AppBar'
+import ProdutoScreen from './screens/ProdutoScreen'
+import PesquisaScreen from './screens/PesquisaScreen'
 
 const HomeNavigator = createStackNavigator(
   {
     Home: {
       screen: HomeScreen,
     },
+    Produto: {
+      screen: ProdutoScreen,
+    },
+    Pesquisa: {
+      screen: PesquisaScreen
+    }
   },
   {
     defaultNavigationOptions: {
-      header: (navigationProps: HeaderProps) => <AppBar {...navigationProps} />,
+      headerBackTitle: 'Voltar',
+      headerStyle: {
+        backgroundColor: '#1c9dc1',
+      },
+      headerBackTitleStyle: {
+        color: '#fff',
+      },
+      headerTintColor: '#fff',
+      // header: (navigationProps: HeaderProps) => <AppBar {...navigationProps} />,
     },
   } as any
 )
